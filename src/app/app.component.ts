@@ -9,4 +9,14 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'angular-tut';
+
+  onClick() {
+    console.log('clicked');
+  }
+  userName: string = '';
+  getInputValue(value: string) {
+    console.log('value = ', value);
+    this.userName = value;  
+    
+  }
 }
