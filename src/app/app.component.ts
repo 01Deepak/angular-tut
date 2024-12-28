@@ -4,10 +4,11 @@ import { CounterComponent } from "./component/counter/counter.component";
 import { PropertyBindingComponent } from "./component/property-binding/property-binding.component";
 import { ControlSatatementComponent } from "./component/control-satatement/control-satatement.component";
 import { NestedLoopComponent } from "./component/nested-loop/nested-loop.component";
+import { StyleBindingComponent } from "./component/style-binding/style-binding.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CounterComponent, PropertyBindingComponent, ControlSatatementComponent, NestedLoopComponent],
+  imports: [RouterOutlet, CounterComponent, PropertyBindingComponent, ControlSatatementComponent, NestedLoopComponent, StyleBindingComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
