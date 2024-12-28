@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="form-container">
+        <h3>Basic form example</h3>
+        <form #basicForm="ngForm" (ngSubmit)="onSubmit(basicForm.value)">
+            <div class="form-input"><input ngModel type="text" name="user_name" placeholder="Enter your name"/></div>
+            <div class="form-input"><input ngModel type="text" name="user_email" placeholder="Enter your email"/></div>
+            <div class="form-input"><input ngModel type="text" name="user_password" placeholder="Enter your password"></div>
+            <div class="form-input"><button>Submit</button></div>
+        </form>
+    </div>
+</div>
