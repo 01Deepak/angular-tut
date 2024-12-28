@@ -1,0 +1,59 @@
+<p>--------------- if else statement -----------------</p>
+@if (isLogedIn) {
+    <p>You are logged in</p>
+}@else {
+    <p>You are not logged in</p>
+}
+
+<p>--------------- if else if statement ---------------</p> 
+@if (isLogedIn) {
+    <p>You are logged in</p>
+}@else if (isLogedIn) {
+    <p>You are logged in</p>
+}@else {
+    <p>You are not logged in</p>
+}
+
+<p>--------------- switch statement ---------------</p>
+@switch (selectedColor) {
+    @case ('blue') {
+        <h4>blue</h4>
+    }
+    @case ('red') {
+        <h4>red</h4>
+    }
+    @case ('green') {
+        <h4>green</h4>
+    }
+    @default {
+        <h4>default color</h4>}
+}
+
+<p>--------------- for loop ---------------</p>
+@for(user of users; track user; let idx=$index) {
+    <p>{{idx}}: {{user}}</p>
+}
+
+
+<p>------------------ ng if statement ------------------</p>
+<div *ngIf="isLogedIn; else elseBlock">You are logged in</div>
+<ng-template #elseBlock><div>You are not logged in</div></ng-template>
+
+<p>------------ ng switch statement -------------</p>
+<div [ngSwitch] = "selectedColor">
+    <div *ngSwitchCase="'blue'">blue</div>
+    <div *ngSwitchCase="'red'">red</div>
+    <div *ngSwitchCase ="'green'">green</div>
+
+    <div *ngSwitchDefault>default color</div>
+</div>
+<div>
+    <button (click)="selectColor('blue')">chang blue color</button>
+    <button (click)="selectColor('red')">chang red color</button>
+    <button (click)="selectColor('green')">change green color</button>
+    <button (click)="selectColor('sddf')">default</button>
+</div>
+
+<p>---------------ng for loop ---------------</p>
+
+<h3 *ngFor="let user of users, let i = index">Users {{i+1}}: {{user}}</h3>
