@@ -6,10 +6,11 @@ import { ControlSatatementComponent } from "./component/control-satatement/contr
 import { NestedLoopComponent } from "./component/nested-loop/nested-loop.component";
 import { StyleBindingComponent } from "./component/style-binding/style-binding.component";
 import { BasicFormComponent } from "./component/basic-form/basic-form.component";
+import { TodoListComponent } from "./component/todo-list/todo-list.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CounterComponent, PropertyBindingComponent, ControlSatatementComponent, NestedLoopComponent, StyleBindingComponent, BasicFormComponent],
+  imports: [RouterOutlet, CounterComponent, PropertyBindingComponent, ControlSatatementComponent, NestedLoopComponent, StyleBindingComponent, BasicFormComponent, TodoListComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
