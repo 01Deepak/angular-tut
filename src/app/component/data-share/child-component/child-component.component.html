@@ -1,4 +1,5 @@
-<div *ngFor="let user of users">
+<p>---------------------- child component ------------------------------------</p>
+<!-- <div *ngFor="let user of users">
     <h3>Name : {{user.name}}</h3>
     <h3>Age : {{user.age}}</h3>
     <h3>Address : {{user.address}}</h3>
@@ -9,4 +10,17 @@
         </li>
     </ul>
     <hr/>
+</div> -->
+
+<p>share data from child to parent component</p>
+<div>
+    <button (click)="shareData('This data come from child')">share data button in child</button>
 </div>
+<div>
+    <label for="name"> Name </label>
+    <input type="text" name="name" #name>
+    <button (click)="handleSaveClick(name.value)">click</button>
+</div>
+<p>----------------------x child component x------------------------------------</p>
+
+

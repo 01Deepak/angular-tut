@@ -1,1 +1,6 @@
-<app-child-component [users] = "users"></app-child-component>
+<p>--------------------------- parent component start -----------------------------------------</p>
+<h4>Receved Data in parent = {{  receivedData }}</h4>
+<h4>Name from child input = {{  inputFromChild }}</h4>
+<app-child-component [users] = "users" (dataToParent)="receiveData($event)" (inputDataEvent)="inputDataFromChild($event)"></app-child-component>
+
+<p>---------------------------x parent component end x-----------------------------------------</p>

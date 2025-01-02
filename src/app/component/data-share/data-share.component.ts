@@ -18,4 +18,15 @@ users: any = [
   {name: 'John', age: 30 , address: '123 Main St', socialAccounts: ['Facebook', 'Twitter', 'Instagram']},
   {name: 'Jane', age: 25 , address: '456 Elm St', socialAccounts: ['Facebook', 'Twitter', 'Instagram']},
 ];
+
+receivedData = '';
+inputFromChild = '';
+receiveData(data: any) {
+  this.receivedData = data;
+}
+
+inputDataFromChild(data: any) {
+  console.log(data);
+  this.inputFromChild = data;
+}
 }
