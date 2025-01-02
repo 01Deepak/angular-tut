@@ -1,0 +1,4 @@
+<p>----------------- template-reference-variable works ----------------------------</p>
+<h3>Name : {{userName}}</h3>
+<input type="text" name="name" #name placeholder="Enter your name">
+<button (click)="handleClick(name.value)">click</button>

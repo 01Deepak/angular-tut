@@ -9,10 +9,11 @@ import { BasicFormComponent } from "./component/basic-form/basic-form.component"
 import { TodoListComponent } from "./component/todo-list/todo-list.component";
 import { DataShareComponent } from "./component/data-share/data-share.component";
 import { TwoWayBindingComponent } from "./component/two-way-binding/two-way-binding.component";
+import { TemplateReferenceVariableComponent } from "./component/template-reference-variable/template-reference-variable.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CounterComponent, PropertyBindingComponent, ControlSatatementComponent, NestedLoopComponent, StyleBindingComponent, BasicFormComponent, TodoListComponent, DataShareComponent, TwoWayBindingComponent],
+  imports: [RouterOutlet, CounterComponent, PropertyBindingComponent, ControlSatatementComponent, NestedLoopComponent, StyleBindingComponent, BasicFormComponent, TodoListComponent, DataShareComponent, TwoWayBindingComponent, TemplateReferenceVariableComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
