@@ -8,10 +8,11 @@ import { StyleBindingComponent } from "./component/style-binding/style-binding.c
 import { BasicFormComponent } from "./component/basic-form/basic-form.component";
 import { TodoListComponent } from "./component/todo-list/todo-list.component";
 import { DataShareComponent } from "./component/data-share/data-share.component";
+import { TwoWayBindingComponent } from "./component/two-way-binding/two-way-binding.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CounterComponent, PropertyBindingComponent, ControlSatatementComponent, NestedLoopComponent, StyleBindingComponent, BasicFormComponent, TodoListComponent, DataShareComponent],
+  imports: [RouterOutlet, CounterComponent, PropertyBindingComponent, ControlSatatementComponent, NestedLoopComponent, StyleBindingComponent, BasicFormComponent, TodoListComponent, DataShareComponent, TwoWayBindingComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
