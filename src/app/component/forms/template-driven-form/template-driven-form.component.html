@@ -1,0 +1,9 @@
+<p>------------------- template-driven-form works ------------------------</p>
+
+<form #loginForm="ngForm" (ngSubmit)="handleLoginSubmit(loginForm.value)">
+    <input type="text" name="name" ngModel placeholder="Enter your name">
+    <br><br>
+    <input type="password" name="password" ngModel placeholder="Enter your password">
+    <br><br>
+    <button>Submit</button>
+</form>
