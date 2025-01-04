@@ -1,0 +1,14 @@
+<p>-------------------- basic-pipe works ------------------------</p>
+<h3>{{text | uppercase}}</h3>
+<h3>{{text | lowercase}}</h3>
+<h3>{{text | titlecase}}</h3>
+<h3>full date = {{today | date: 'fullDate' }}</h3>
+<h3>Short date = {{today | date: 'short'}}</h3>
+<h3>dd/yy/mm = {{today | date: 'dd/MM/yyyy'}}</h3>
+<h3>dd/yy/mm hh:mm = {{today | date: 'dd/MM/yyyy hh:mm'}}</h3>
+
+<h3>{{amount | currency: 'INR'}}</h3>
+
+<p>-------------------- custom pipe ------------------------------------</p>
+<h3>{{text | upparcase}}</h3>
+<h3>{{text | reverse}}</h3>
