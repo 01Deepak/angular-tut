@@ -2,8 +2,16 @@
 
 <form [formGroup]="loginForm" (ngSubmit)="handleSubmit(loginForm)">
     <input type="text" name="name" placeholder="enter name" formControlName="name" />
+    <div *ngIf="name && name?.invalid && (name?.dirty || name?.touched) ">
+        name is required
+    </div>
     <br><br>
     <input type="text" name="password" placeholder="password" formControlName="password" />
+    <div *ngIf="password && password?.invalid && (password?.dirty || password?.touched) ">
+        password is required
+    </div>
     <br><br>
     <button>submit</button>
 </form>
+
+<button (click)="checkLogs(loginForm)">console</button>
