@@ -1,9 +1,21 @@
 <p>------------------- template-driven-form works ------------------------</p>
 
-<form #loginForm="ngForm" (ngSubmit)="handleLoginSubmit(loginForm.value)">
-    <input type="text" name="name" ngModel placeholder="Enter your name">
+<form #loginForm="ngForm" (ngSubmit)="handleLoginSubmit(loginForm)">
+    <input type="text" name="name" ngModel placeholder="Enter your name" required minlength="3" maxlength="10" #name="ngModel">
+    <div *ngIf = "name.invalid && (name.dirty || name.touched)">
+        <small *ngIf="name.errors?.['required']">name is required</small>
+        <small *ngIf="name.errors?.['minlength']">Name atleast 3 characters long.</small>
+        <small *ngIf="name.errors?.['maxlength']">Name atmost 10 characters long</small>
+    </div>
     <br><br>
-    <input type="password" name="password" ngModel placeholder="Enter your password">
+    <input type="password" name="password" ngModel placeholder="Enter your password" required minlength="3" maxlength="10" #password="ngModel">
+    <div *ngIf="password.invalid && (password.dirty || password.touched)">
+        <small *ngIf="password.errors?.['required']">password is required</small>
+        <small *ngIf="password.errors?.['minlength']">password atleast 3 characters long</small>
+        <small *ngIf="password.errors?.['maxlength']">password atmost 10 characters long</small>
+    </div>
+
     <br><br>
     <button>Submit</button>
 </form>
+<button (click)="checkLogs(name)">console</button>
