@@ -1,0 +1,9 @@
+<p>-------------------- Reactive form example ------------------------</p>
+
+<form [formGroup]="loginForm" (ngSubmit)="handleSubmit(loginForm)">
+    <input type="text" name="name" placeholder="enter name" formControlName="name" />
+    <br><br>
+    <input type="text" name="password" placeholder="password" formControlName="password" />
+    <br><br>
+    <button>submit</button>
+</form>
