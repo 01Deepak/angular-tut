@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { CounterComponent } from "./component/counter/counter.component";
 import { PropertyBindingComponent } from "./component/property-binding/property-binding.component";
 import { ControlSatatementComponent } from "./component/control-satatement/control-satatement.component";
@@ -13,10 +13,11 @@ import { TemplateReferenceVariableComponent } from "./component/template-referen
 import { BasicPipeComponent } from "./component/pipes/basic-pipe/basic-pipe.component";
 import { TemplateDrivenFormComponent } from "./component/forms/template-driven-form/template-driven-form.component";
 import { ReactiveFormComponent } from "./component/forms/reactive-form/reactive-form.component";
+import { HeaderComponent } from './component/header/header.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CounterComponent, PropertyBindingComponent, ControlSatatementComponent, NestedLoopComponent, StyleBindingComponent, BasicFormComponent, TodoListComponent, DataShareComponent, TwoWayBindingComponent, TemplateReferenceVariableComponent, BasicPipeComponent, TemplateDrivenFormComponent, ReactiveFormComponent],
+  imports: [RouterOutlet,RouterLink,RouterLinkActive,HeaderComponent, CounterComponent, PropertyBindingComponent, ControlSatatementComponent, NestedLoopComponent, StyleBindingComponent, BasicFormComponent, TodoListComponent, DataShareComponent, TwoWayBindingComponent, TemplateReferenceVariableComponent, BasicPipeComponent, TemplateDrivenFormComponent, ReactiveFormComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
