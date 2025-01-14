@@ -7,6 +7,9 @@ import { NestedLoopComponent } from './component/nested-loop/nested-loop.compone
 import { StyleBindingComponent } from './component/style-binding/style-binding.component';
 import { UsersComponent } from './component/users/users.component';
 import { PageNotFoundComponent } from './component/page-not-found/page-not-found.component';
+import { AboutComponent } from './component/about/about.component';
+import { AboutMeComponent } from './component/about/about-me/about-me.component';
+import { AboutCompanyComponent } from './component/about/about-company/about-company.component';
 
 export const routes: Routes = [
     {path:'', component: CounterComponent},
@@ -18,5 +21,9 @@ export const routes: Routes = [
     {path:'basic-form',component:BasicFormComponent},
     {path:'user',component:UsersComponent},
     {path:'user/:id',component:UsersComponent},
+    {path:'about',component:AboutComponent, children: [
+        {path:'me',component:AboutMeComponent},
+        {path:'company',component:AboutCompanyComponent},
+    ]},
     {path:'**',component:PageNotFoundComponent}
 ];
