@@ -6,6 +6,7 @@ import { ControlSatatementComponent } from './component/control-satatement/contr
 import { NestedLoopComponent } from './component/nested-loop/nested-loop.component';
 import { StyleBindingComponent } from './component/style-binding/style-binding.component';
 import { UsersComponent } from './component/users/users.component';
+import { PageNotFoundComponent } from './component/page-not-found/page-not-found.component';
 
 export const routes: Routes = [
     {path:'', component: CounterComponent},
@@ -16,5 +17,6 @@ export const routes: Routes = [
     {path:'style-binding',component:StyleBindingComponent},
     {path:'basic-form',component:BasicFormComponent},
     {path:'user',component:UsersComponent},
-    {path:'user/:id',component:UsersComponent}
+    {path:'user/:id',component:UsersComponent},
+    {path:'**',component:PageNotFoundComponent}
 ];
