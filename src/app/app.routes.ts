@@ -5,6 +5,7 @@ import { PropertyBindingComponent } from './component/property-binding/property-
 import { ControlSatatementComponent } from './component/control-satatement/control-satatement.component';
 import { NestedLoopComponent } from './component/nested-loop/nested-loop.component';
 import { StyleBindingComponent } from './component/style-binding/style-binding.component';
+import { UsersComponent } from './component/users/users.component';
 
 export const routes: Routes = [
     {path:'', component: CounterComponent},
@@ -14,4 +15,6 @@ export const routes: Routes = [
     {path:'nested-loop',component:NestedLoopComponent},
     {path:'style-binding',component:StyleBindingComponent},
     {path:'basic-form',component:BasicFormComponent},
+    {path:'user',component:UsersComponent},
+    {path:'user/:id',component:UsersComponent}
 ];
