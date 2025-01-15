@@ -14,10 +14,11 @@ import { BasicPipeComponent } from "./component/pipes/basic-pipe/basic-pipe.comp
 import { TemplateDrivenFormComponent } from "./component/forms/template-driven-form/template-driven-form.component";
 import { ReactiveFormComponent } from "./component/forms/reactive-form/reactive-form.component";
 import { HeaderComponent } from './component/header/header.component';
+import { FooterComponent } from "./component/footer/footer.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,RouterLink,RouterLinkActive,HeaderComponent, CounterComponent, PropertyBindingComponent, ControlSatatementComponent, NestedLoopComponent, StyleBindingComponent, BasicFormComponent, TodoListComponent, DataShareComponent, TwoWayBindingComponent, TemplateReferenceVariableComponent, BasicPipeComponent, TemplateDrivenFormComponent, ReactiveFormComponent],
+  imports: [RouterOutlet, RouterLink, RouterLinkActive, HeaderComponent, CounterComponent, PropertyBindingComponent, ControlSatatementComponent, NestedLoopComponent, StyleBindingComponent, BasicFormComponent, TodoListComponent, DataShareComponent, TwoWayBindingComponent, TemplateReferenceVariableComponent, BasicPipeComponent, TemplateDrivenFormComponent, ReactiveFormComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
